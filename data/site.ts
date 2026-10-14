@@ -1,20 +1,21 @@
 export const site = {
   name: "Aarav Mandi",
-  tagline: "Authentic Mandi, slow-cooked and served hot.",
+  tagline: "Not just food, it's an Arabian journey on your plate.",
+  phone: "+91 95836 77771",
+  phoneHref: "tel:+919583677771",
+  whatsappHref:
+    "https://wa.me/919583677771?text=Hi%20Aarav%20Mandi%2C%20I%20would%20like%20to%20place%20an%20order.",
   about: {
-    heading: "Our Story",
+    heading: "Mandi Story",
     paragraphs: [
-      "Mandi is a traditional Arabian dish of tender meat slow-cooked over fragrant rice, and it is the heart of everything we serve. This is placeholder text that we will replace with the restaurant's real story.",
-      "From smoky grilled platters to family-sized servings, every dish is cooked fresh and made for sharing. More details about our chefs, recipes and spices will go here.",
+      "Mandi is more than just a dish, it is a tradition from the ancient lands of Yemen in the heart of the Arabian Peninsula. Centuries ago, Bedouin tribes prepared this special meal during gatherings and celebrations.",
+      "The secret of Mandi lies in slow cooking. Tender meat is marinated with fragrant spices and cooked with long-grain rice in a traditional underground clay oven called a tandoor, so the juices and aroma infuse into the rice for a rich, smoky flavour.",
+      "Served with fresh salads, sauces and warm hospitality, Mandi is meant to be shared with family and friends. At Aarav Mandi, we bring this timeless Arabian tradition to your table, where every bite tells a story of culture, flavour and celebration.",
     ],
   },
-  phone: "+91 90000 00000",
-  phoneHref: "tel:+919000000000",
-  whatsappHref:
-    "https://wa.me/919000000000?text=Hi%20Aarav%20Mandi%2C%20I%20would%20like%20to%20place%20an%20order.",
   links: {
     swiggy: "#",
     zomato: "#",
-    instagram: "#",
+    instagram: "https://www.instagram.com/aaravmandi/",
   },
 };
