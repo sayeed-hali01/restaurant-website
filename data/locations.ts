@@ -12,4 +12,14 @@ export const locations: Location[] = [
     mapsUrl:
       "https://www.google.com/maps/search/?api=1&query=Aarav+Mandi+Sri+Krishna+Complex+IIIT+College+Square+Gothapatana+Bhubaneswar",
   },
+  {
+    id: "angul",
+    name: "Aarav Mandi, Angul",
+    address: "Hari Mohury Chowk, Angul, Odisha",
+    phone: "+91 96688 44374",
+    phoneHref: "tel:+919668844374",
+    timings: "12:00 PM to 11:00 PM, every day",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=Aarav+Mandi+Hari+Mohury+Chowk+Angul+Odisha",
+  },
 ];

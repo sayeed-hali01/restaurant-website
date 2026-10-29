@@ -1,16 +1,33 @@
+import Image from "next/image";
 import { site } from "@/data/site";
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="flex min-h-[calc(100vh-4rem)] items-center justify-center bg-[radial-gradient(ellipse_at_top,#2a2208,#0b0b0b_70%)] px-6 text-center"
+      className="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-6 py-16 text-center"
     >
-      <div className="max-w-2xl">
-        <h1 className="font-serif text-5xl text-gold md:text-7xl">
-          {site.name}
-        </h1>
-        <p className="mt-4 text-lg text-muted">{site.tagline}</p>
+      <Image
+        src="/images/hero-spread.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(11,11,11,0.75),rgba(11,11,11,0.92))]" />
+
+      <div className="relative z-10 max-w-2xl">
+        <h1 className="sr-only">{site.name}</h1>
+        <Image
+          src="/images/logo.png"
+          alt={`${site.name}, Indo Arabian Restaurant`}
+          width={1400}
+          height={789}
+          priority
+          className="mx-auto h-auto w-64 md:w-96"
+        />
+        <p className="mt-6 text-lg text-foreground">{site.tagline}</p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
@@ -30,6 +47,7 @@ export default function Hero() {
             Order on Zomato
           </a>
         </div>
+
         <div className="mt-4 flex items-center justify-center gap-6 text-sm">
           <a
             href={site.phoneHref}

@@ -1,4 +1,5 @@
 import { site } from "@/data/site";
+import AboutSlideshow from "@/components/AboutSlideshow";
 
 export default function About() {
   return (
@@ -16,9 +17,7 @@ export default function About() {
           ))}
         </div>
 
-        <div className="flex aspect-[4/3] items-center justify-center rounded-2xl border border-gold/20 bg-surface text-muted">
-          Photo coming soon
-        </div>
+        <AboutSlideshow slides={site.about.images} />
       </div>
     </section>
   );
